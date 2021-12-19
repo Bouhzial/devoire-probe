@@ -153,29 +153,33 @@ class SimpleForm extends Component {
           ) : null}
         </div>
         <div>
-          <input
-            className="cb"
-            name="order"
-            value={this.state.order}
-            defaultChecked={this.state.ordre}
-            type="checkbox"
-            onClick={this.toggleChange}
-          />{" "}
-          <span>l'ordre est impotant?</span>
+          <label className="container">
+            l'ordre est impotant
+            <input
+              name="order"
+              value={this.state.order}
+              defaultChecked={this.state.ordre}
+              type="checkbox"
+              onClick={this.toggleChange}
+            />{" "}
+            <span class="checkmark"></span>
+          </label>
         </div>
         <div>
-          <input
-            className="cb"
-            name="remis"
-            value={this.state.remis}
-            defaultChecked={this.state.remis}
-            type="checkbox"
-            onClick={this.toggleChange}
-          />{" "}
-          <span>la remis est permis?</span>
+          <label className="container">
+            la remis est permis
+            <input
+              name="remis"
+              value={this.state.remis}
+              defaultChecked={this.state.remis}
+              type="checkbox"
+              onClick={this.toggleChange}
+            />{" "}
+            <span class="checkmark"></span>
+          </label>
         </div>
         <div>
-          <button className="cb" onClick={this.onSubmitForm}>
+          <button className="button" onClick={this.onSubmitForm}>
             calcuer
           </button>
         </div>
